@@ -1,4 +1,4 @@
-# eslint-config-analyzer
+# ESLint-config-analyzer
 
 This is a tool that was created for an MSc project of Kristín Fjóla Tómasdóttir at Delft University of Technology, August 2017.
 
