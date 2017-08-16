@@ -1,0 +1,11 @@
+---
+  extends: airbnb
+  rules:
+    array-bracket-spacing:
+      - 2
+      - never
+    block-spacing: 2
+
+  plugins:
+    - react
+    - node

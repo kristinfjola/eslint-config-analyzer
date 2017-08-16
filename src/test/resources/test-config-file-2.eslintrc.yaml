@@ -1,0 +1,40 @@
+env:
+  node: true
+  es6: true
+
+parserOptions:
+  ecmaVersion: 2017
+
+extends:  # extends comment
+    - "preset1" # comment
+    - "eslint-config-preset2"
+    - "plugin:node/recommended"
+plugins: node
+# some rules
+rules:
+  # Possible Errors
+  # http://eslint.org/docs/rules/#possible-errors
+  no-control-regex: 0 #comment
+
+  # Node.js and CommonJS
+  # http://eslint.org/docs/rules/#nodejs-and-commonjs
+  no-mixed-requires: 'warn'
+  no-path-concat:
+    - 2
+    - object: assert
+      property: deepEqual
+      message: Use assert.deepStrictEqual().
+    - object: assert
+      property: equal
+      message: Use assert.strictEqual() rather than assert.equal().
+  no-restricted-modules: [off, sys]
+
+  # Stylistic Issues
+  # http://eslint.org/docs/rules/#stylistic-issues
+  block-spacing: warn,
+  brace-style: ['error', 1tbs, {allowSingleLine: true}]
+  comma-dangle: [error, only-multiline] # comment
+
+# Global scoped method and vars
+globals:
+  GLOBAL: false

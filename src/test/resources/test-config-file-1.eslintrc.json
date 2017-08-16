@@ -1,0 +1,55 @@
+{
+  "globals": {
+    "global": false,
+    "__VERSION__": false
+  },
+
+  // env comment
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+
+  // extends eslint
+  "extends": [ // comment
+    "eslint:recommended", // comment
+  ] // comment
+
+  // plugins
+  "plugins": [
+    "node",
+    "react", "eslint-plugin-import",
+  ],
+
+  // our rules
+  "rules": {
+    // possible errors
+    "no-console": "off",  // comment
+    "use-isnan": 0,
+    "no-cond-assign": [
+      2 // comment
+    ],
+
+    // best practices
+
+    // variables
+    "no-undef": "2",
+
+    // stylistic
+    "comma-dangle": [1, "always-multiline"],
+    "comma-spacing": [
+      "warn",// comment
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+
+    // es6
+    "arrow-parens": "0",
+
+    // plugins
+    "node/rule",
+  }
+}
